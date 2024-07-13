@@ -1,5 +1,6 @@
+/* Non-recursive method to find GCD of two numbers using Euclidean algorithm */
+//Time Complexity: O(log(min(a,b))
 
-//Non-recursive method to find GCD of two numbers
 import java.util.Scanner;
 
 class GCD_Of_Two_Numbers {
@@ -23,5 +24,6 @@ class GCD_Of_Two_Numbers {
         int A = sc.nextInt();
         int B = sc.nextInt();
         System.out.println(GCD(A, B));
+        sc.close();
     }
 }
