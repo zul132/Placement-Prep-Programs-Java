@@ -4,10 +4,19 @@ import java.util.Scanner;
 
 public class Matrix_Multiplication {
     static int[][] multiplyMatrices(int a[][], int b[][]) {
-        int m = a.length;
-        int n = b.length; // =a[0].length
-        int p = b[0].length;
+        int m = a.length; // no of rows in matrix a
+        int n = b.length; // no of cols in matrix a = no of rows in matrix b
+        int p = b[0].length; // no of cols in matrix b
         int res[][] = new int[m][p];
+
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < p; j++) {
+                res[i][j] = 0;
+                for (int k = 0; k < n; k++) {
+                    res[i][j] += a[i][k] * b[k][j];
+                }
+            }
+        }
 
         return res;
     }
