@@ -1,4 +1,6 @@
-/* Program to perform Matrix Multiplication on two given matrices */
+/* Program to perform Matrix Multiplication on two given matrices 
+ * Asked in Multicoreware Coding Assessment.
+*/
 
 import java.util.Scanner;
 

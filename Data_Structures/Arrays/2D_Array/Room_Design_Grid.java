@@ -1,6 +1,9 @@
 /* PROBLEM: A room design takes input in the form of width, height, color1, color2 and fills the 2D grid 
 such that first row alternates between the pixels of color <color1> and <color2> with a period of <height>. 
-For each row that follows, the period shall be <height> - <row number>. Note that <color1> always begins the row. */
+For each row that follows, the period shall be <height> - <row number>. Note that <color1> always begins the row.
+*/
+//Asked in Multicoreware Coding Assessment.
+//NOTE: This is not the exact actual solution for this problem. The original question expects the output in the form actual color pixels to fill the grid.
 
 import java.util.Scanner;
 
