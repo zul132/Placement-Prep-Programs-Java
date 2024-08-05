@@ -1,8 +1,10 @@
-/* Given an array of random numbers, Push all the zero’s of the given array to the end of the array. 
+/* Given an array of random numbers, Push all the zero’s of the given array to the end of the array.
  * APPROACH 1:
 */
+/* Companies asked: MultiCoreWare, SAP Labs, Amazon, Bloomberg, LinkedIn (Interview round mostly)*/
+
 //Time Complexity: O(n) where n is the number of elements of the input array.
-//Auziliary Space: O(1)
+//Auxiliary Space: O(1)
 
 import java.util.Scanner;
 
@@ -38,7 +40,7 @@ public class Move_All_Zeros_To_End_Array {
             arr[i] = sc.nextInt();
 
         pushZerosToEnd(arr, n);
-        
+
         // print the array after pushing all zeros to the end
         System.out.println("Array after pushing all zeros to the end:");
         for (int i = 0; i < n; i++)

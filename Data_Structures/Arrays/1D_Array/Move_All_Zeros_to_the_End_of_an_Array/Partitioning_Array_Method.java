@@ -2,13 +2,13 @@
  * APPROACH 2: Partioning the Array
 */
 //Time Complexity: O(n) where n is the number of elements of the input array.
-//Auziliary Space: O(1)
+//Auxiliary Space: O(1)
 
 import java.util.Scanner;
 
 public class Partitioning_Array_Method {
     static void pushZerosToEnd(int arr[], int n) {
-        int j = 0; // Pivot element
+        int j = 0; // Pivot element index
 
         for (int i = 0; i < n; i++) {
             if (arr[i] != 0) {
@@ -18,6 +18,7 @@ public class Partitioning_Array_Method {
         }
     }
 
+    // utility functiom to swap two elements of an array
     static void swap(int arr[], int a, int b) {
         int temp = arr[a];
         arr[a] = arr[b];
