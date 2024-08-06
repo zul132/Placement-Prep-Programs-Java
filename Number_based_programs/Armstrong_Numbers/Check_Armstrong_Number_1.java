@@ -1,3 +1,11 @@
+/* Write a program to check if the given number is Armstrong or not.
+   Input 0: 153
+   Output 0: Armstrong Number
+
+   Input 1: 155
+   Output 1: Not an Armstrong Number
+ */
+
 import java.io.*;
 import java.util.*;
 
@@ -20,18 +28,17 @@ public class Check_Armstrong_Number_1 {
             return false;
     }
 
-    // utility function to find the count of digits in num
-    public static int count(int num) {
-        int q = num;
-        int count = 0;
-        while (q > 0) {
-            count += 1;
-            q = q / 10;
+    // utility function to find the count of digits in a number
+    public static int count(int n) {
+        int x = 0;
+        while (n != 0) {
+            n /= 10;
+            x++;
         }
-        return count;
+        return x;
     }
 
-    // utility function to find power/exponent of A raised to B
+    // utility function to find the power/exponent of A raised to B
     public static int pow(int a, int b) {
         int res = a;
         for (int i = 1; i < b; i++) {
