@@ -1,7 +1,17 @@
+/*
+    You are tasked with implementing a User Account Management system with three distinct user roles: HR, Manager, and Employee. 
+    Each role has specific privileges:
+
+    Employee: Can request leave approval from HR, view assigned tasks, and update task status.
+    Manager: Has all the privileges of an Employee, can assign tasks to employees, and reassign employees to different managers.
+    HR: Can approve or reject leave requests and print organizational information for employees and their supervisors.
+
+    You are specifically required to implement the functionality for Leave Request by employee  and Leave Approval/Rejection by HR.
+*/
+
 import java.util.ArrayList;
 import java.util.List;
 
-/* Module to request and approve/reject employee Leave */
 class Request {
     private String empName;
     private String hrName;
