@@ -6,7 +6,7 @@
     Manager: Has all the privileges of an Employee, can assign tasks to employees, and reassign employees to different managers.
     HR: Can approve or reject leave requests and print organizational information for employees and their supervisors.
 
-    You are specifically required to implement the functionality for Leave Request by employee  and Leave Approval/Rejection by HR.
+    You are specifically required to implement the functionality for Leave Request by employee and Leave Approval/Rejection by HR.
 */
 
 import java.util.ArrayList;
