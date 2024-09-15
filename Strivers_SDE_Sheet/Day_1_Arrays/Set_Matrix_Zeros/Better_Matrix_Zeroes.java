@@ -4,8 +4,9 @@
 
 // Better Solution (still Brute Force)
 /* 
-    Time Complexity: O(2 * mn)
-    Space Complexity: O(m+n) = O(m) + O(n)
+    Time Complexity: O(2 * mn) 
+                     => O(N^2) for a square matrix
+    Space Complexity: O(m+n) = O(m) + O(nv ccfFC)
 */
 
 import java.util.Scanner;

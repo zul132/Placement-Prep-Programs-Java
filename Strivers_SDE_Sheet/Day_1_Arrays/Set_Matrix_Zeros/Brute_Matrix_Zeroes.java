@@ -12,7 +12,8 @@
 
 // Brute Force Solution
 /* 
-    Time Complexity: O(mn)^3
+    Time Complexity: O(mn) * O(m + n) + O(mn)
+                     => O(N^3) for a square matrix
     Space Complexity: O(1)
 */
 
