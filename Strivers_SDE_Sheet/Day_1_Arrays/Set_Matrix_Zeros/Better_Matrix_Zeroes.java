@@ -6,7 +6,7 @@
 /* 
     Time Complexity: O(2 * mn) 
                      => O(N^2) for a square matrix
-    Space Complexity: O(m+n) = O(m) + O(nv ccfFC)
+    Space Complexity: O(m+n) = O(m) + O(n)
 */
 
 import java.util.Scanner;
