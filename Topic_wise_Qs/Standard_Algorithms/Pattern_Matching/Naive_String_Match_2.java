@@ -5,7 +5,7 @@
     txt = "AABAACAADAABAAABAA"
     pat = "AABA"
 */
-// Companies asked: SAP Labs (Online Coding Test)
+// Companies asked: SAP Labs (Coding Round)
 
 import java.util.Scanner;
 
