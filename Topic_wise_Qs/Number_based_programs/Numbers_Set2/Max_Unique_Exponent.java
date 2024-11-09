@@ -6,7 +6,7 @@
 
     Sample Input 0: 10 15
     Sample Output 0: 
-    4 
+    3
     12
     Explanation:
     For the range [10, 15]:
