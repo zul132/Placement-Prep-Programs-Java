@@ -7,6 +7,7 @@
     Sample Input 1: arr = [3, 8, 15, 17, 24, 31]
     Sample Output 1: 0
 */
+// Companies asked: SAP Labs (Coding round)
 
 import java.util.Scanner;
 
