@@ -39,9 +39,11 @@ public class Naive_String_Match_2 {
     }
 
     public static void main(String[] args) {
-        // Driver code to test the program
-        String text = "AABAACAADAABAAABAA";
-        String pattern = "AABA";
+        Scanner sc = new Scanner(System.in);
+        // Convert input strings to lowercase
+        String text = sc.next().toLowerCase();
+        String pattern = sc.next().toLowerCase();
+
         naiveSearch(pattern, text);
     }
 }
