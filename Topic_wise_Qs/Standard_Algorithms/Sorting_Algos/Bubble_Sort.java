@@ -5,8 +5,9 @@
     After each iteration in bubble sort, the largest element among the unsorted elements is pushed to the end.
     In each iteration, the comparison takes place up to the last unsorted element.
 */
-// Time Complexity (Worst,Average): O(n2)
-// Best Time Complexity: O(n) --> array is already sorted
+/* Time Complexity: O(n^2) (Worst,Average case)
+                    O(n) (Best case) 
+*/
 // Space Complexity: O(1)
 /*  
     Optimized Bubble Sort: we add a boolean flag 'swapped' to check if swapping has occurred at the end of each iteration.

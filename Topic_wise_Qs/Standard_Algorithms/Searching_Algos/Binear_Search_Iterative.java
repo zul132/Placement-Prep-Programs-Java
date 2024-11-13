@@ -34,6 +34,11 @@ public class Binear_Search_Iterative {
          */
         sort(arr, n);
 
+        // Print the sorted array
+        for (int i = 0; i < n; i++)
+            System.out.print(arr[i] + " ");
+        System.out.println();
+
         int flag = 0;
         int start = 0;
         int stop = n - 1;
