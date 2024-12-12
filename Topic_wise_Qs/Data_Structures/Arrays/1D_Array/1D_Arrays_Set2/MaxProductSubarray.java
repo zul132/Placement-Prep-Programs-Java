@@ -16,27 +16,20 @@
     Here we use a dynamic programming (DP) approach with two variables to efficiently handle the product variations 
     caused by negative numbers.
 */
+// Time Complexity: O(N)
+// Space Complexity: O(1)
 
 public class MaxProductSubarray {
-    public int maxProduct(int[] nums) {
-        int globalMax = nums[0];
-        int currentMax = nums[0], currentMin = nums[0];
+    public int maxProductSubarray(int[] nums) {
+        int globalMax = nums[0], maxProduct = nums[0], minProduct = nums[0];
 
         for (int i = 1; i < nums.length; i++) {
             int num = nums[i];
+            int tempMax = Math.max(num, Math.max(num * maxProduct, num * minProduct));
+            minProduct = Math.min(num, Math.min(num * maxProduct, num * minProduct));
 
-            // compute the maximum and minimum products for the current element.
-            int tempMaxProduct = currentMax * num;
-            int tempMinProduct = currentMin * num;
-
-            /*
-             * determine the current max product and current min product ending at the index
-             * i
-             */
-            currentMax = Math.max(num, Math.max(tempMaxProduct, tempMinProduct));
-            currentMin = Math.min(num, Math.min(tempMaxProduct, tempMinProduct));
-            // find the global maximum product
-            globalMax = Math.max(globalMax, currentMax);
+            maxProduct = tempMax;
+            globalMax = Math.max(globalMax, maxProduct);
         }
 
         return globalMax;
