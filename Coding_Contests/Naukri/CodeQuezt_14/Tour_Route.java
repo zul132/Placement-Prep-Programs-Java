@@ -37,6 +37,15 @@
     Refer to the Approach and Code Explanation provided after the program.
 */
 
+/* 
+    Time Complexity
+    1. Graph Initialization: 𝑂(𝑚log𝑛) (due to sorting edges using PriorityQueue).
+    2. Eulerian Check: O(n+m).
+    3. Finding Eulerian Circuit: O(m).
+    
+    Total Complexity: O(mlogn).
+*/
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
