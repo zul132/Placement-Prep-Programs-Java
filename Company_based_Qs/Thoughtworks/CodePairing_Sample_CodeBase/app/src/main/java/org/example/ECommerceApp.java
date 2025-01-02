@@ -16,6 +16,9 @@ public class ECommerceApp {
         User regularUser = new User("Alice", "regular");
         User premiumUser = new User("Bob", "premium");
 
+        // NEW: create a super premium user
+        User superPremiumUser = new User("Chris", "super premium");
+
         // Create some products
         Product product1 = new Product("Laptop", 1000);
         Product product2 = new Product("Headphones", 200);
@@ -33,5 +36,13 @@ public class ECommerceApp {
         premiumCart.addProduct(product1);
         premiumCart.addProduct(product2);
         premiumCart.checkout(); // Should apply a 20% discount
+
+        System.out.println("");
+
+        // NEW: create a cart for a super premium user
+        Cart superPremiumCart = new Cart(superPremiumUser);
+        superPremiumCart.addProduct(product1);
+        superPremiumCart.addProduct(product2);
+        superPremiumCart.checkout(); // Should apply a 20% discount
     }
 }

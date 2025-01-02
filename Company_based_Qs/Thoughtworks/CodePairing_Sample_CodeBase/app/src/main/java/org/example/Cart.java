@@ -27,7 +27,10 @@ public class Cart {
 
     public double applyDiscount() {
         double total = calculateTotal();
-        if (user.getUserType().equalsIgnoreCase("premium")) {
+        if (user.getUserType().equalsIgnoreCase("super premium")) {
+            System.out.println("Applying 30% discount for super premium user.");
+            return total * 0.70;
+        } else if (user.getUserType().equalsIgnoreCase("premium")) {
             System.out.println("Applying 20% discount for premium user.");
             return total * 0.80;
         } else {
