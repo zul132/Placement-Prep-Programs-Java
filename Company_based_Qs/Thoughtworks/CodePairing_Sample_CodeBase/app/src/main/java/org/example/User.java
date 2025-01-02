@@ -2,7 +2,7 @@ package org.example;
 
 public class User {
     private final String username;
-    private final String userType;
+    private final String userType; // "regular" or "premium"
 
     public User(String username, String userType) {
         this.username = username;

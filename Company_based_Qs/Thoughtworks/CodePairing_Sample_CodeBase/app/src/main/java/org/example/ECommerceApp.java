@@ -1,5 +1,15 @@
 package org.example;
 
+/* 
+    CODE PAIRING TASK
+    We have received a new requirement from the client that we need to add another User Type "super premium". 
+    When these Super Premium users do a purchase using our app, they should get 30% discount. 
+
+    Note:
+    Either you can test the code first and then add the new feature, or you can implement the new feature first and then test the code.
+    Thoughtworks prefers TDD way, i.e. Test Driven Development, where you write test cases first and then add a new feature.
+*/
+
 public class ECommerceApp {
     public static void main(String[] args) {
         // Create a regular user and a premium user
