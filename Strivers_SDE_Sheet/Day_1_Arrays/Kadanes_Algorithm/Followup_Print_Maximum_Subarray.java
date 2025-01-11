@@ -9,7 +9,7 @@
     Note: Whenever the sum becomes 0, it means we are starting a new subarray and the subarray ends when sum becomes > maxSum.
 */
 
-public class Followup_Divide_Conquer {
+public class Followup_Print_Maximum_Subarray {
     public int maxSubArray(int[] nums) {
         int n = nums.length;
         int maxSum = Integer.MIN_VALUE;
