@@ -25,8 +25,16 @@
     Explanation: The only possible triplet sums up to 0.
 */
 
-// TWO POINTER APPROACH
+/* Companies asked: Google, Facebook (Meta), and many others (its a popular Qn). */
 
+// TWO POINTER APPROACH
+/*
+ * Time complexity: O(N^2)
+ * Space complexity: O(N) --> for sorting
+ * 
+ * Note: The space complexity may be dependent on the lamguage used 
+ * as some languages will sort in-place which will be O(1)
+*/
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
