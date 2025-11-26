@@ -9,6 +9,7 @@
 
     Return the minimum number of split-and-merge operations needed to transform nums1 into nums2.
 */
+// Patterns Used: Hash Table + BFS (Breadth First Search)
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -23,16 +24,18 @@ public class Split_and_Merge_Array_Transformation {
 
         /* Convert both arrays to Lists for easier comparison. */
         List<Integer> n1 = new ArrayList<>();
+        List<Integer> n2 = new ArrayList<>();
+
         for (int num : nums1) {
             n1.add(num);
         }
-        List<Integer> n2 = new ArrayList<>();
+
         for (int num : nums2) {
             n2.add(num);
         }
 
         if (n1.equals(n2)) {
-            return 0;
+            return 0; // No split-merge operations needed
         }
 
         /* Enqueue each array state alongside its current operation count (steps) */
@@ -44,7 +47,7 @@ public class Split_and_Merge_Array_Transformation {
         queue.offer(n1);
         visited.add(n1);
 
-        int steps = 0;
+        int steps = 0; // Number of split-merge operations performed
 
         while (!queue.isEmpty()) {
             int size = queue.size();
